@@ -433,7 +433,7 @@ class FlutterMentionsState extends State<FlutterMentions> {
                           .toLowerCase()
                           .replaceAll(RegExp(_pattern), '');
 
-                      return ele == str ? false : ele.contains(str);
+                      return ele.contains(str);
                     }).toList(),
                     onTap: (value) {
                       addMention(value, list);
